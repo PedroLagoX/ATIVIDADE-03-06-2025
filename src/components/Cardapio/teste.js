@@ -5,7 +5,7 @@ function Cardapio() {
         const carregarItens = async () => {
             try {
                 console.log('🔄 Carregando itens...');
-                const response = await axios.get('https://SEU-BACKEND.onrender.com/cardapio');
+                const response = await axios.get('https://atividade-03-06-2025.onrender.com/cardapio');
                 
                 console.log('✅ Resposta recebida:', response.data);
                 console.log('📊 Tipo:', typeof response.data);

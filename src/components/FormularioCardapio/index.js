@@ -24,7 +24,7 @@ function FormularioCardapio() {
                 nomeDoPrato, 
                 descricao, 
                 preco, 
-                categoria, // Corrigido: era 'Categoria' (com C maiúsculo)
+                categoria,
                 disponibilidade, 
                 url
             })
@@ -36,11 +36,11 @@ function FormularioCardapio() {
             setDisponibilidade('')
             setUrl('')
         } catch (error) {
-            let errorMsg = 'Erro ao cadastrar item no cardápio.' // Corrigido: era 'erroMsg'
+            let errorMsg = 'Erro ao cadastrar item no cardápio.'
             if  (error.response && error.response.data) {
-                errorMsg = error.response.data.mensagem // Corrigido: era 'erroMsg'
+                errorMsg = error.response.data.mensagem
                 if (error.response.data.erros) {
-                    errorMsg += ' ' + Object.values(error.response.data.erros).join(', ') // Corrigido: era 'erroMsg'
+                    errorMsg += ' ' + Object.values(error.response.data.erros).join(', ')
                 }
             }
 
@@ -58,7 +58,7 @@ function FormularioCardapio() {
                     id="nomeDoPrato"
                     placeholder="Nome do Prato"   
                     value={nomeDoPrato}
-                    onChange={(e) => setNomeDoPrato(e.target.value)} // Corrigido: era setNome
+                    onChange={(e) => setNomeDoPrato(e.target.value)}
                     required
                 />
                 <input 
@@ -66,7 +66,7 @@ function FormularioCardapio() {
                     id="descricao"
                     placeholder="Descrição"
                     value={descricao}
-                    onChange={(e) => setDescricao(e.target.value)} // Corrigido: era setSexo
+                    onChange={(e) => setDescricao(e.target.value)}
                     required
                 />
                 <input 
@@ -75,7 +75,7 @@ function FormularioCardapio() {
                     id="preco"
                     placeholder="Preço"
                     value={preco}
-                    onChange={(e) => setPreco(e.target.value)} // Corrigido: era setIdade
+                    onChange={(e) => setPreco(e.target.value)}
                     required
                 />
                 <input 
@@ -83,13 +83,13 @@ function FormularioCardapio() {
                     id="categoria"
                     placeholder="Categoria"
                     value={categoria}
-                    onChange={(e) => setCategoria(e.target.value)} // Corrigido: era setAltura
+                    onChange={(e) => setCategoria(e.target.value)}
                     required
                 />
                 <select 
                     id="disponibilidade"
                     value={disponibilidade}
-                    onChange={(e) => setDisponibilidade(e.target.value)} // Corrigido: era setPeso
+                    onChange={(e) => setDisponibilidade(e.target.value)}
                     required
                 >
                     <option value="">Selecione a disponibilidade</option>
@@ -101,7 +101,7 @@ function FormularioCardapio() {
                     id="url"
                     placeholder="URL da Imagem"
                     value={url}
-                    onChange={(e) => setUrl(e.target.value)} // Corrigido: era setPosicao
+                    onChange={(e) => setUrl(e.target.value)}
                     required
                 />
                 <button type="submit">Cadastrar Item</button>
@@ -115,7 +115,7 @@ function FormularioCardapio() {
                 mensagem={mensagem}
                 tipo={tipoMensagem}
                 visivel={visivel}
-                onClose={fecharMensagem} // Corrigido: era onclose (minúsculo)
+                onClose={fecharMensagem}
             />
         </div>
     )

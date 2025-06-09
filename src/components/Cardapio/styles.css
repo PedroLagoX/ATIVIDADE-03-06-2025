@@ -1,15 +1,37 @@
-/* C:\Users\aluno.den\frontend\src\components\Cardapio\styles.css */
+.cardapio-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
 
 .cardapio-lista li {
-    text-align: left;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-  }
-  
-  .cardapio-lista li strong {
-    font-weight: bold;
-  }
+  text-align: left;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardapio-lista li strong {
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.cardapio-lista li:first-child:last-child {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-style: italic;
+  color: #6c757d;
+  background-color: #f8f9fa;
+  box-shadow: none;
+}

@@ -11,7 +11,7 @@ function Cardapio() {
                 console.log('🔄 INICIANDO carregamento dos itens...');
                 
                 // SUBSTITUA pela URL real do seu backend
-                const response = await axios.get('https://frontendrestaurante.onrender.com/cardapio');
+                const response = await axios.get('https://atividade-03-06-2025.onrender.com/cardapio');
                 
                 console.log('✅ RESPOSTA COMPLETA:', response);
                 console.log('📋 DADOS RECEBIDOS:', response.data);

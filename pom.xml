@@ -80,16 +80,16 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<!-- Plugin para garantir codificação UTF-8 -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
 				<version>3.3.1</version>
 				<configuration>
 					<encoding>UTF-8</encoding>
 				</configuration>
-			</plugin>
+			</plugin> -->
 			<!-- Plugin do compilador com codificação explícita -->
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
@@ -97,7 +97,7 @@
 					<target>17</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 </project>

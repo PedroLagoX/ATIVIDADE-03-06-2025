@@ -8,7 +8,7 @@ function Cardapio() {
     useEffect(() => {
         const carregarItens = async () => {
             try {
-                const response = await axios.get('http://localhost:3000/cardapio');
+                const response = await axios.get('https://frontendrestaurante.onrender.com/cardapio');
                 setItem(response.data);
             } catch (error) {
                 alert ('Erro ao carregar os itens do cardápio: ' + error);

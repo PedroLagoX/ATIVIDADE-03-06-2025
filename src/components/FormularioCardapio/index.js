@@ -20,7 +20,7 @@ function FormularioCardapio() {
 
     const cadastrarCardapio = async() => {
         try {
-            const response = await axios.post('http://localhost:8080/cardapio', {
+            const response = await axios.post('https://frontendrestaurante.onrender.com/cadastro', {
                 nomeDoPrato, 
                 descricao, 
                 preco, 
